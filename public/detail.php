@@ -1,11 +1,11 @@
 <?php
-$host = '127.0.0.1';
+$host = 'mariadb';
 $dbname = 'bakery';
 $username = 'root';
 $password = '4dy5qwtrsag#!sad';
 
 try {
-    $pdo = new PDO("mysql:host=$host;port=3309;dbname=$dbname", $username, $password);
+    $pdo = new PDO("mysql:host=$host;port=3306;dbname=$dbname", $username, $password);
 
     $productSlug = $_GET['slug'];
 

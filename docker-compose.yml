@@ -27,6 +27,7 @@ services:
     volumes:
       - './:/var/www/html'
       - './docker/nginx:/etc/nginx/conf.d'
+      - './public/detail.php:/var/www/html/public/detail.php'
     depends_on:
       - php
 
